@@ -1,0 +1,23 @@
+<table id="user">
+  <tr>
+    <th>STT</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Role</th>
+
+  </tr>
+  <tbody>
+  <tr *ngFor = "let user of users ; index as i">
+    <th>{{i+1}}</th>
+    <th>{{user.name}}</th>
+    <th>{{user.email}}</th>
+    <th>
+      <button (click)="deleteUser(user.id)">Delete</button>
+      <button>Update</button>
+    </th>
+
+  </tr>
+  </tbody>
+</table>
+
+
